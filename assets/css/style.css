@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/swirl_pattern.png");
+}
+
+h1 {
+    width: 70%;
+    margin: 20px auto;
+    color: #d54d7b; 
+    font-family: "Great Vibes", cursive; 
+    font-size: 60px; 
+    line-height: 120%; 
+    font-weight: normal; 
+    text-align: center; 
+    text-shadow: 0 1px 1px #fff; }
+
+h2 {
+    width: 70%;
+    margin: 0 auto; 
+    color: teal;  
+    font-size: 50px; 
+    line-height: 100%; 
+    text-align: center;
+    padding: 10px; 
+    font-family: 'Rakkas', cursive; 
+}
+
+h3 {
+    width: 70%;
+    margin: 0 auto; 
+    color: #f2f2f2; 
+    background: #ff4a4a; 
+    line-height: 120%; 
+    font-weight: 700; 
+    text-align: center;
+    padding: 10px; 
+    font-family: 'Libre Baskerville', serif; 
+}
+
+button {
+    margin-bottom: 20px;
+}

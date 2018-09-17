@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greek Mythology Trivia Game</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Rakkas" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>   
+    
+</head>
+<body>
+
+    <div class="container row justify-content-md-center mt-5">
+        <div class="main-section col-md-8 col-sm-12 col-12">
+            <header class="nameOfTheGame">
+                <h1>
+                    Trivia Game
+                </h1>
+                <h2>
+                    Greek Mythology
+                </h2>
+            </header>
+            
+            <div id = "correctResults">
+
+            </div>
+            
+            <div id = "incorrectResults">
+            
+            </div>
+
+            <div id = "unansweredQuestions">
+            
+            </div>
+
+            <br>
+
+            <p class="instruction">
+                    INSTRUCTION: Once the start button is clicked, you have 30 seconds to finish the quiz. 
+            </p>
+            <button type="button" class="btn btn-info" id="startButton">Start</button>
+          
+            <div id="timer">
+
+            </div>
+
+
+            <form name ="quizForm">
+                <fieldset class="form-group">
+                    <legend>Question 1: God of the sun and light, god of music and healing</legend>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "a" id = "q1a" name="question-1">
+                        A. Athena
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "b" id = "q1b" name="question-1">
+                        B. Dionysus
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "c" id = "q1c" name="question-1">
+                        C. Apollo
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "d" id = "q1d" name="question-1">
+                        D. Ares
+                        </label>
+                    </div>
+                    
+                    <br>
+
+                    <legend>Question 2: God of fire, blacksmith to the gods</legend>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "a" id = "q2a" name="question-2">
+                        A. Hermes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "b" id = "q2b" name="question-2">
+                        B. Hera
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "c" id = "q2c" name="question-2">
+                        C. Hephaestes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "d" id = "q2d" name="question-2">
+                        D. Zeus
+                        </label>
+                    </div>
+
+                    <br>
+
+                    <legend>Question 3: Goddess of love and beauty</legend>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "a" id = "q3a" name="question-3">
+                        A. Aphrodite
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "b" id = "q3b" name="question-3">
+                        B. Athena
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "c" id = "q3c" name="question-3">
+                        C. Hera
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "d" id = "q3d" name="question-3">
+                        D. Artemis
+                        </label>
+                    </div>
+
+                    <br>
+
+                    <legend>Question 4: God of the underworld</legend>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "a" id = "q4a" name="question-4">
+                        A. Hera
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "b" id = "q4b" name="question-4">
+                        B. Hades
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "c" id = "q4c" name="question-4">
+                        C. Zeus
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "d" id = "q4d" name="question-4">
+                        D. Ares
+                        </label>
+                    </div>
+
+                    <br>
+
+                    <legend>Question 5: King of the Gods</legend>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "a" id = "q5a" name="question-5">
+                        A. Hera
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "b" id = "q5b" name="question-5">
+                        B. Hades
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "c" id = "q5c" name="question-5">
+                        C. Zeus
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "d" id = "q5d" name="question-5">
+                        D. Hermes
+                        </label>
+                    </div>
+
+                    <br>
+
+                    <legend>Question 6: Goddess of war</legend>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "a" id = "q6a" name="question-6">
+                        A. Ares
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "b" id = "q6b" name="question-6">
+                        B. Dionysus
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "c" id = "q6c" name="question-6">
+                        C. Artemis
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "d" id = "q6d" name="question-6">
+                        D. Athena
+                        </label>
+                    </div>
+                    
+                    <br>
+                    <legend>Question 7: God of wine</legend>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "a" id = "q7a" name="question-7">
+                        A. Hermes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "b" id = "q7b" name="question-7">
+                        B. Dionysus
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "c" id = "q7c" name="question-7">
+                        C. Artemis
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value = "d" id = "q7d" name="question-7">
+                        D.  Hades 
+                        </label>
+                    </div>
+                       
+                </fieldset>
+                <br>
+                <button id="submitButton" type="submit" class="btn btn-primary" value = "Submit Answers">Submit</button>
+            </form>
+            
+        </div>
+    </div>
+
+
+    <script src="assets/javascript/app.js"></script>
+</body>
+</html>
