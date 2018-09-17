@@ -1,6 +1,6 @@
 
 // Total questions
-var total = 7;
+var total = 12;
 
 var correctAnswers = 0;
 var wrongAnswers = 0;
@@ -18,9 +18,15 @@ var q4;
 var q5;
 var q6;
 var q7;
+var q8;
+var q9;
+var q10;
+var q11;
+var q12;
+
 
 // Set the correct answers
-var answers = ['c','c','a','b','c','d','b'];
+var answers = ['c','c','a','b','c','d','b','c','a','a','c','d'];
 
 window.onload = function(){
     $("form").hide()
@@ -31,7 +37,8 @@ window.onload = function(){
     });
     
     $('#submitButton').click(function(event) {
-        
+        // If this method is called, the default action of the event will not be triggered.
+        // in this case, prevent the page from reloading when the submit button is click.
         event.preventDefault();
 
         if (submitAnswers() ){
@@ -49,7 +56,7 @@ window.onload = function(){
 // creat a quizTimer object with the following methods
 var quizTimer = {
     
-    timeAllowed: 30,
+    timeAllowed: 60,
 
     // start the timer
     start: function() {
@@ -81,6 +88,11 @@ var quizTimer = {
             q5 = document.forms ["quizForm"]["question-5"].value;
             q6 = document.forms ["quizForm"]["question-6"].value;
             q7 = document.forms ["quizForm"]["question-7"].value;
+            q8 = document.forms ["quizForm"]["question-8"].value;
+            q9 = document.forms ["quizForm"]["question-9"].value;
+            q10 = document.forms ["quizForm"]["question-10"].value;
+            q11 = document.forms ["quizForm"]["question-11"].value;
+            q12 = document.forms ["quizForm"]["question-12"].value;
             
             for (var i = 1; i <= total; i++) {
                 if (eval('q'+i) == null || eval('q'+i) == '') {
@@ -125,6 +137,11 @@ function submitAnswers() {
     q5 = document.forms ["quizForm"]["question-5"].value;
     q6 = document.forms ["quizForm"]["question-6"].value;
     q7 = document.forms ["quizForm"]["question-7"].value;
+    q8 = document.forms ["quizForm"]["question-8"].value;
+    q9 = document.forms ["quizForm"]["question-9"].value;
+    q10 = document.forms ["quizForm"]["question-10"].value;
+    q11 = document.forms ["quizForm"]["question-11"].value;
+    q12 = document.forms ["quizForm"]["question-12"].value;
 
 
     // Remind user if a question is missed
